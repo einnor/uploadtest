@@ -1,4 +1,10 @@
 Uploadtest::Application.routes.draw do
+  get "galleries/index"
+  get "galleries/new"
+  get "galleries/edit"
+  get "galleries/show"
+  get "galleries/update"
+  get "galleries/destroy"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
