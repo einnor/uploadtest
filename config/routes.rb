@@ -1,10 +1,10 @@
 Uploadtest::Application.routes.draw do
-  get "galleries/index"
-  get "galleries/new"
-  get "galleries/edit"
-  get "galleries/show"
-  get "galleries/update"
-  get "galleries/destroy"
+  root 'galleries#index'
+  get "/new",									:to => 'galleries#new'
+  get "/edit",								:to => 'galleries#edit'
+  get "/show",								:to => 'galleries#show'
+  get "/update",							:to => 'galleries#update'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -45,7 +45,7 @@ Uploadtest::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
