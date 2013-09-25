@@ -1,2 +1,3 @@
-<%= @gallery.name %>
+<%= @gallery.image.url(:large) %>
+<%= @gallery.name %> <br />
 <%= @gallery.created_at %>

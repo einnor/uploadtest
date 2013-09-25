@@ -3,10 +3,17 @@
 	<div class="row">
 		<div class="large-12 columns">
 			<fieldset>
-				<legend>New Gallery Item</legend>
+				<legend>Edit Gallery Item</legend>
 
 				<%= f.label :name %><br />
 				<%= f.text_field :name%><br />
+
+				<%= image_tag @gallery.image.url(:thumb) %>
+
+				<%= f.file_field :image %>
+
+				<%= f.label :remote_image_url, " or image URL" %>
+				<%= f.text_field :remote_image_url %> <br />
 
 				<%= f.submit "Submit" %>
 
