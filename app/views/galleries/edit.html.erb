@@ -1,2 +1,17 @@
-<h1>Galleries#edit</h1>
-<p>Find me in app/views/galleries/edit.html.erb</p>
+<%= form_for @gallery, :html => {:multipart => true} do |f|%>
+
+	<div class="row">
+		<div class="large-12 columns">
+			<fieldset>
+				<legend>New Gallery Item</legend>
+
+				<%= f.label :name %><br />
+				<%= f.text_field :name%><br />
+
+				<%= f.submit "Submit" %>
+
+			</fieldset>
+		</div>
+	</div>
+
+<% end %>

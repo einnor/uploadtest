@@ -1,0 +1,2 @@
+<%= @gallery.name %>
+<%= @gallery.created_at %>

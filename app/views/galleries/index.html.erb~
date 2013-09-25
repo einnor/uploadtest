@@ -1,7 +1,7 @@
 <p><%= link_to "Add a New Gallery", new_path %></p>
 
 <% @galleries.each do |gallery| %>
-	<%= image_tag gallery.image.url(:thumb) %> <br />
+	<%= image_tag gallery.image.url(:thumb) %>
 	<%= gallery.name %><br />
 	<%= link_to "Show", gallery %> |
 	<%= link_to "Edit", edit_gallery_path(gallery) %> |

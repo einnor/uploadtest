@@ -7,7 +7,7 @@ Uploadtest::Application.routes.draw do
   #get "/edit",								:to => 'galleries#edit'
   #get "/show",								:to => 'galleries#show'
   get "/update",							:to => 'galleries#update'
-  #get "/destroy",							:to => 'galleries#destroy'
+  get "/destroy",							:to => 'galleries#destroy'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
